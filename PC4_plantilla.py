@@ -96,7 +96,7 @@ st.markdown("<h2 style='text-align: center;'>Mi experiencia aprendiendo a progra
 
 # Agregar un  texto para la respuesta
 texto_2 = """
-La verdad es que sí fue bastante dificil, se me complicó usar un programa completamente nuevo y lo quería avanzar en mi casa, pero solo tengo mac entonces es otro mundo diferente. Sin embargo, me facilitó mucho que nos dieran tiempo en clase para avanzar con la ayuda de Luisa. 
+Mi experiencia aprendiendo a programar fue agradable. En un principio pensé que no iba a poder avanzar porque de por si la palabra "programar" ya se percibe como complicada. Sin embargo, pese a que hubieron algunos temas que se me dificultaron, como por ejemplo los bucles y condicionales, lo pude lograr con el apoyo de la jefa de prácticas Luisa que estuvo ayudando constantemente en clase como también con asesorias para la pc4 y el trabajo final. También me gustó que pudieramos experimentar con el programa Visual Studio Code, que sí fue complicado de usar y entender, pero se pudo lograr. Finalmente, me gustó la propuesta de trabajo final porque se traslada a una utilidad para otros. Pude aprender a programar poco a poco y entender algo que en un principio me parecía incomprensible.
 """
 
 # Mostramos el texto
@@ -112,7 +112,7 @@ st.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto_2}</div>
 # En este caso, {texto_2} se reemplaza por el valor de la variable texto_2.
 
 # Agregamos un subtítulo en la barra lateral
-sidebar.markdown("<h1 style='text-align: center;'>Estos son algunos de los gráficos que pude realizar a lo largo del curso</h1>", unsafe_allow_html=True)
+sidebar.markdown("<h1 style='text-align: center;'>Estos son algunos de los gráficos que pude realizar a lo largo del curso. Puedes visualizarlos con su descripción respectiva.</h1>", unsafe_allow_html=True)
 
 # <h1 style='text-align: center;'>Los análisis de Ellie</h1>: Esta es una cadena de código HTML.
 # La etiqueta <h1> se utiliza para el encabezado principal de una página web.
@@ -120,7 +120,7 @@ sidebar.markdown("<h1 style='text-align: center;'>Estos son algunos de los gráf
 # El texto dentro de las etiquetas <h1> ("Los análisis de Ellie") es el contenido del encabezado.
 
 # Creamos una lista de gráficos
-graficos = ['Gráfico de cantidad de Familias linguisticas', 'Gráfico de Familias lingüísticas', 'Mapa de promedio de goles anotados por Roma']
+graficos = ['Gráfico de cantidad de lenguas por Familias linguisticas', 'Mapa de la Familia linguística NK', 'Gráfico del promedio de goles anotados por Roma']
 
 # Creamos un cuadro de selección en la barra lateral
 grafico_seleccionado = sidebar.selectbox('Selecciona un gráfico', graficos)
@@ -133,17 +133,17 @@ grafico_seleccionado = sidebar.selectbox('Selecciona un gráfico', graficos)
 # La función selectbox se utiliza para crear un cuadro de selección en la barra lateral.
 
 # Mostramos el gráfico seleccionado
-if grafico_seleccionado == 'Gráfico de cantidad de Familias linguisticas':
-    sidebar.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu gráfico</div>", unsafe_allow_html=True)
-    sidebar.image("barras_horizontales_familia.jpg", caption='Gráfico de cantidad de familias linguisticas', width=500)
+if grafico_seleccionado == 'Gráfico de cantidad de lenguas por Familias linguisticas':
+    sidebar.markdown("<div style='text-align: justify; font-size: 20px;'>Este es uno de los gráficos que realice para la PC3 parte 2. Esta representa la cantidad de lenguas pertenecientes a cada familia linguística. Por ejemplo, la familia linguística con más lenguas es la Arawakan.</div>", unsafe_allow_html=True)
+    sidebar.image("barras_horizontales_familia.jpg", caption='Gráfico de cantidad de lenguas por Familias linguisticas', width=500)
     pass
-elif grafico_seleccionado == 'Gráfico de Familias lingüísticas':
-    sidebar.markdown("<div style='text-align: justify'>Este es el gráfico que realicé para la PC2.</div>", unsafe_allow_html=True)
-    sidebar.image("mapa_familia_linguistica.jpg", caption='Gráfico de Familias lingüísticas', width=500)
+elif grafico_seleccionado == 'Mapa de la Familia linguística NK':
+    sidebar.markdown("<div style='text-align: justify'>Este es uno de los gráficos que realice para la PC3 parte 2. Esta representa la distribución geográfica en Sudamérica de los hablantes de las lenguas de la familia linguística NK. Por ejemplo, en Perú se pueden percibir tres grupos de hablantes.</div>", unsafe_allow_html=True)
+    sidebar.image("mapa_familia_linguistica.jpg", caption='Mapa de la Familia linguística NK', width=500)
     pass
-elif grafico_seleccionado == 'Mapa de promedio de goles anotados por Roma':
-    sidebar.markdown("<div style='text-align: justify'>Este es el gráfico que realicé para una de mis PC'S.</div>", unsafe_allow_html=True)
-    sidebar.image("pastel_goles.jpg", caption='Mapa del promedio de goles anotados por Roma', width=500)
+elif grafico_seleccionado == 'Gráfico del promedio de goles anotados por Roma':
+    sidebar.markdown("<div style='text-align: justify'>Este es un gráfico que realice para la PC3 parte 1. Esta representa el promedio de la cantidad de goles anotado por Roma como equipo local y equipo visitante. Por ejemplo, se puede visualizar que Roma anoto más goles como equipo local que como equipo visitante.</div>", unsafe_allow_html=True)
+    sidebar.image("pastel_goles.jpg", caption='Gráfico del promedio de goles anotados por Roma', width=500)
     pass
 
 # if grafico_seleccionado == 'Gráfico de Macroareas':: Esta línea verifica si la opción seleccionada es 'Gráfico de Macroareas'.
