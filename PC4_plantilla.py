@@ -112,7 +112,7 @@ st.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto_2}</div>
 # En este caso, {texto_2} se reemplaza por el valor de la variable texto_2.
 
 # Agregamos un subtítulo en la barra lateral
-sidebar.markdown("<h1 style='text-align: center;'>}Estos son algunos de los gráficos que pude realizar a lo largo del curso</h1>", unsafe_allow_html=True)
+sidebar.markdown("<h1 style='text-align: center;'>Estos son algunos de los gráficos que pude realizar a lo largo del curso</h1>", unsafe_allow_html=True)
 
 # <h1 style='text-align: center;'>Los análisis de Ellie</h1>: Esta es una cadena de código HTML.
 # La etiqueta <h1> se utiliza para el encabezado principal de una página web.
